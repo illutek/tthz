@@ -1,0 +1,24 @@
+name = tthz
+description = Voor de wielerclub TTHZ, gebruikt framework Bootstrap 3.3.2
+version = VERSION
+core = 7.x
+
+;CSS
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/bootstrap-theme.css
+stylesheets[all][] = css/style.css
+
+;JS
+scripts[]   =   js/bootstrap.min.js
+scripts[]   =   js/ie10-viewport-bug-workaround.js
+scripts[]   =   js/custom_backstretch.js
+scripts[]   =   js/jquery.backstretch.min.js
+
+;REGIONS
+regions[content] = Content
+regions[sidebar_left] = Linker zijbalk
+regions[news_anoniem] = Nieuws anoniem
+regions[news_leden] = Nieuws leden
+regions[bottom_first] = Onder eerst
+regions[bottom_midle] = Onder midden
+regions[bottom_last] = Onder laatste
