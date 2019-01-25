@@ -13,7 +13,7 @@ a:hover {
 }
 
 h1 {
-    color: white;
+    color: #293f47;
 }
 
 h2 {
@@ -340,6 +340,10 @@ footer {
 
 .node-lid h3 {
     font-size: 17px;
+}
+
+.bestuur__img {
+    overflow: hidden;
 }
 
 /*

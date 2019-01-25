@@ -4845,7 +4845,7 @@ a.badge:focus {
   }
 .bcg_header h1,
 .bcg_header .h1 {
-  /* color: inherit; */
+  color: white;
 }
 .bcg_header p {
   margin-bottom: 15px;

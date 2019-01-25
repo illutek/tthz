@@ -1,71 +1,19 @@
 <!-- naviagatie stiky on top -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed"
-                    data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">Home</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                       role="button" aria-expanded="false">
-                        Ritten
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="<?php print base_path() ?>grupposportivo-ritten ">Grupposportivo ritten</a></li>
-                        <li><a href="<?php print base_path() ?>oefenritten ">Oefenritten</a></li>
-                        <li><a href="<?php print base_path() ?>klassiekers ">Klassiekers</a></li>
-                        <li><a href="<?php print base_path() ?>permanente-ritten ">Permanente ritten</a></li>
-                        <li><a href="<?php print base_path() ?>gps-route">GPS ritten</a></li>
-                    </ul>
-                </li>
-                <li><a href="<?php print base_path() ?>leden">Clubleden</a></li>
-                <?php global $user; ?>
-                <?php if ($user->uid != 0) {
-                    print '<li><a href="' . base_path() . 'aanwezigheidslijst">Aanwezigheidslijst</a></li>';
-                } else {
-                    print '';
-                } ?>
-                <li><a href="<?php print base_path() ?>blog">Blog</a></li>
-                <li><a href="<?php print base_path() ?>interssante-linken">Linken</a></li>
-                <li><a href="<?php print base_path() ?>tthz-contacteren">Contacteren</a></li>
-                <li><a href="<?php print base_path() ?>gastenboek-berichten ">Gastenboek</a></li>
-                <li><a href="<?php print base_path() ?>fotoalbums">Fotoalbums</a></li>
-                
-                <li><a href="<?php print base_path() ?>statuten">Statuten</a></li>
-                <li><a href="<?php print base_path() ?>reglement">Reglement</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <!-- de inlog button en user print -->
-                <?php
-                if ($user->uid != 0) {
-                    print '<li class="first">' . t('') .
-                        '<a href="' . url('user/' . $user->uid) . '">' . $user->name . '</a>
-                        </li>';
-                    print '<li>
-                        <a href="' . url('user/logout') . '">' . t('Logout') . '</a>
-                        </li>';
-                } else {
-                    print '<li class="first">
-                        <a href="' . url('user') . '">' . ('Leden') . '</a>
-                        </li>';
 
-                } ?>
+<?php
+/**
+ * include van navigatie
+ * ../partials/nav.inc.php gaat niet lukken
+ * 
+ * oplossing
+ * include dirname(__FILE__) . '/../includes/nav.inc.php'
+ * vanaf PHP 5.3 you can use __DIR__ in place of dirname(__FILE__)
+ */
 
-            </ul>
-        </div>
-        <!--/.navbar-collapse -->
-    </div>
-</nav>
+  include __DIR__ . '/partials/nav.inc.php';
+
+?>
+
 
 <!-- bcg_header hier de bootstrap slider, logo, site naam, slogan en googlemaps -->
 <div class="bcg_header"><!-- class bcg_header in bootstrap.css op regel 4850 ongeveer -->
