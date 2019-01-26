@@ -97,7 +97,7 @@
                         <?php print render($page['bottom_first']); ?>
                     </div>
                     <!-- de link aanpassen naar de content -->
-                    <a href="<?php print base_path() ?>blog" class="btn btn-gruppo" role="button">Meer</a>
+                    <!--<a href="<?php /** print base_path() */  ?>blog" class="btn btn-gruppo" role="button">Meer</a>-->
                 </div>
                 <div class="bottom_midle col-md-4">
                     <div class="bottom_content">
