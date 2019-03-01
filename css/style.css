@@ -1,175 +1,181 @@
+:root {
+  --white: #FBFFFE;
+  --black: #0d1b2a;
+  --blue: #3343A5;
+  --green: #B2EF78;
+}
+
 body {
-    background: #7aa095;
-    padding-top: 70px;
+  background-color: var(--white);
+  padding-top: 70px;
 }
 
 a {
-    color: #293f47;
+  color: #293f47;
 }
 
 a:hover {
-    color: #a89400;
-    text-decoration: none;
+  color: #a89400;
+  text-decoration: none;
 }
 
 h1 {
-    color: #293f47;
+  color: #293f47;
 }
 
 h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 img {
-    float: left;
-    padding: 0 15px 15px 0;
-    display: block;
-    max-width: 100%;
-    height: auto;
+  float: left;
+  padding: 0 15px 15px 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 table {
-    width: 100%;
+  width: 100%;
 }
 
 th {
-    border: solid 1px #ffffff;
-    padding: 5px 0;
+  border: solid 1px #ffffff;
+  padding: 5px 0;
 }
 
 td {
-    padding: 5px 0;
-    border-bottom: solid 1px #e4e4e4;
+  padding: 5px 0;
+  border-bottom: solid 1px #e4e4e4;
 }
 
 .footable-row-detail-name {
-    display: table-cell;
-    font-weight: normal;
-    padding-right: 0.5em;
+  display: table-cell;
+  font-weight: normal;
+  padding-right: 0.5em;
 }
 
 #toolbar {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 /*
 *aanpassing nav menu van bootstrap
 ============================================================*/
 .navbar-inverse .navbar-nav > li > a {
-    color: #005ea3;
-    padding: 15px 10px 0 10px;
+  color: var(--green);
+  padding: 15px 10px 0 10px;
 }
 
 .dropdown-menu {
-    background-color: #00202b;
+  background-color: #00202b;
 }
 
 .dropdown-menu > li > a {
-    color: #005ea3;
-    line-height: 35px;
+  color: #005ea3;
+  line-height: 35px;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-    color: #000;
-    background-color: #000000;
+  color: #000;
+  background-color: #000000;
+}
+
+
+/*
+* events on the homepage with css-grid
+*/
+
+.events__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
 }
 
 /*
 *
 ==========================================================*/
 .container_wrap {
-    /*margin-top: -30px;*/
-    /*om een of andere duistere reden moeten aanpassen*/
-    background: #ffffff;
+  /*margin-top: -30px;*/
+  /*om een of andere duistere reden moeten aanpassen*/
+  background: #ffffff;
 }
 
 .bcg_header {
-    margin-top: -30px;
+  margin-top: -30px;
+  height: 350px;
 }
 
-.bcg_header #logo_wrap, .bcg_header .club_name_wrap {
-    padding-top: 30px;
+.bcg_header #logo_wrap,
+.bcg_header .club_name_wrap {
+  padding-top: 30px;
 }
 
 .bcg_header #logo_wrap {
-    overflow: auto;
+  overflow: auto;
 }
 
-.bcg_header .slogan, .bcg_header .route {
-    color: #ff785a;
-    padding-left: 20px;
-}
-
-.bcg_header .slogan {
-    font-weight: 400;
-    font-size: 18px;
-    text-align: right;
-    padding-right: 30px;
-}
-
-.bcg_header .route {
-    padding-top: 75px;
-}
-
-.bcg_header .route img {
-    padding-right: 15px;
-}
 
 /*
 *sponsors
 =======================================================*/
 .sponsor_wrap {
-    width: 100%;
-    padding-bottom: 10px;
-    border-bottom: solid 1px #e4e4e4;
-    /*dit zorgt ervoor dat de div ook onder de afbeelding komt*/
-    display: inline-block;
-    overflow: hidden;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #e4e4e4;
+  /*dit zorgt ervoor dat de div ook onder de afbeelding komt*/
+  display: inline-block;
+  overflow: hidden;
 }
 
 .sponsor_sidebar_wrap td {
-    border-top: solid 1px #ffffff;
-    border-bottom: none;
+  border-top: solid 1px #ffffff;
+  border-bottom: none;
 }
 
 .sponsor_sidebar_wrap .sponsor_sidebar_title a {
-    font-size: 16px;
-    line-height: 32px;
+  font-size: 16px;
+  line-height: 32px;
 }
 
-#inner_zijbalk_left h2, #content_bottom_wrap h2, .title_attachment {
-    font-size: 20px;
-    line-height: 45px;
-    padding-left: 50px;
-    background: url("../images/black-cyclist.png") no-repeat left top;
+#inner_zijbalk_left h2,
+#content_bottom_wrap h2,
+.title_attachment {
+  font-size: 20px;
+  line-height: 45px;
+  padding-left: 50px;
+  background: url("../images/black-cyclist.png") no-repeat left top;
 }
 
 /*
 *nieuws blok voor alle bezoekers en de leden
 =========================================================*/
 #news_anoniem h2 a {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 #news_anoniem {
-    background: #7aa095;
-    color: #ffffff;
-    margin-bottom: 15px;
+  background: #7aa095;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
 
-#news_anoniem, #news_leden {
-    /* display: inline-block; dit zorgt ervoor dat de div ook onder de afbeelding komt*/
-    padding: 15px;
+#news_anoniem,
+#news_leden {
+  /* display: inline-block; dit zorgt ervoor dat de div ook onder de afbeelding komt*/
+  padding: 15px;
 }
 
 #news_leden {
-    border: solid 1px #cbe500;
+  border: solid 1px #cbe500;
 }
 
-.content_img, #news_anoniem img, #news_leden img {
-    float: left;
-    padding-right: 15px;
+.content_img,
+#news_anoniem img,
+#news_leden img {
+  float: left;
+  padding-right: 15px;
 }
 
 /*
@@ -177,79 +183,46 @@ td {
 =========================================================*/
 
 #content_bottom_wrap {
-    clear: both;
-    margin-top: 25px;
+  clear: both;
+  margin-top: 25px;
 }
 
 #content_bottom_wrap h2 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 #content_bottom_wrap p {
-    min-height: 60px;
+  min-height: 60px;
 }
 
-.bottom_first, .bottom_midle, .bottom_last {
-    border-left: solid 1px #e4e4e4;
-    padding-bottom: 25px;
-    /*min-height: 175px;*/
-}
 
-.bottom_first .views-field-title a {
-    /* color: #000000;*/
-}
-
-.bottom_midle .views-row-1 {
-    padding-bottom: 10px;
-}
-
-.bottom_midle a {
-    color: #293f47;
-}
-
-.bottom_last .more-link {
-    display: none;
-}
-
-.bottom_last .item-list ul {
-    list-style: none;
-    margin: 0;
-}
-
-#content_bottom_wrap .item-list li {
-    margin: 0 0 0.1em;
-}
-
-#content_bottom_wrap .item-list li a {
-    color: #000000;
-}
 
 footer {
-    color: #ffffff;
-    padding-top: 15px;
+  color: #ffffff;
+  padding-top: 15px;
 }
 
 /*
 * Buttons
 ========================================*/
 .btn {
-    border-radius: 0px;
+  border-radius: 0px;
 }
 
 .btn-gruppo {
-    color: #ffffff;
-    background-color: #293f47;
-    border-color: #2e6da4;
-    border-color: #ffffff;
-    margin-top: 10px;
-    /*position: absolute;*/
-    left: 5px;
-    bottom: 20px;
+  color: #ffffff;
+  background-color: #293f47;
+  border-color: #2e6da4;
+  border-color: #ffffff;
+  margin-top: 10px;
+  /*position: absolute;*/
+  left: 5px;
+  bottom: 20px;
 }
 
 .btn-gruppo:hover {
-    color: #ffffff;
-    background-color: #a89400;
+  color: #ffffff;
+  background-color: #a89400;
 }
 
 /*wat extra padding onder de velden*/
@@ -263,35 +236,36 @@ footer {
 .field-name-field-plaats,
 .field-name-body,
 .url_gpsroute {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .field-name-field-rit-nr-gruppo .field-label {
-    padding-top: 4px;
+  padding-top: 4px;
 }
 
 .field-name-field-rit-nr-gruppo .field-item {
-    padding-left: 5px;
-    font-size: large;
+  padding-left: 5px;
+  font-size: large;
 }
 
 #block-views-sponsors-block-1,
 #block-views-grupposportivo-ritten-block-1,
 #block-views-oefenritten-block-1,
 #block-views-klassiekers-block-1 {
-    margin: 25px 0 35px 0;
+  margin: 25px 0 35px 0;
 }
 
 /*alle extra opmaak*/
 
-.route_map, .route_view {
+.route_map,
+.route_view {
 }
 
 .group-header {
-    /*formulier contact*/
-    width: 100%;
-    display: inline-block;
-    overflow: hidden;
+  /*formulier contact*/
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
 }
 
 /*
@@ -299,51 +273,53 @@ footer {
 ==========================================================*/
 
 .vertrek-date {
-    float: left;
-    padding-right: 15px;
+  float: left;
+  padding-right: 15px;
 }
 
 /*
 *Blog systeem
 =======================================================*/
 
-.view-id-blog .submitted, .node-blog .submitted {
-    padding-bottom: 10px;
+.view-id-blog .submitted,
+.node-blog .submitted {
+  padding-bottom: 10px;
 }
 
 .attachment-after {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .attachment-row {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 /*
 *leden pagina
 ===================================================*/
 
-.node-lid, .node-linken {
-    width: 220px;
-    float: left;
+.node-lid,
+.node-linken {
+  width: 220px;
+  float: left;
 }
 
 .node-lid {
-    height: 275px;
-    margin-right: 50px;
+  height: 275px;
+  margin-right: 50px;
 }
 
 .node-linken {
-    height: 220px;
-    margin-right: 20px;
+  height: 220px;
+  margin-right: 20px;
 }
 
 .node-lid h3 {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .bestuur__img {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /*
@@ -351,18 +327,18 @@ footer {
 ================================================*/
 
 #webform-client-form-9 label {
-    width: 120px;
+  width: 120px;
 }
 
 #webform-client-form-9 input,
 #webform-client-form-9 textarea {
-    border: solid 1px #293f47;
-    padding: 5px;
+  border: solid 1px #293f47;
+  padding: 5px;
 }
 
 #webform-client-form-9 input[type="submit"] {
-    background: white;
-    padding: 10px;
+  background: white;
+  padding: 10px;
 }
 
 /*
@@ -370,37 +346,37 @@ footer {
 ===============================================*/
 
 .person_icon {
-    padding: 0 0 20px 32px;
-    background: url("../images/icon-person-32.png") no-repeat left top;
-    line-height: 36px;
+  padding: 0 0 20px 32px;
+  background: url("../images/icon-person-32.png") no-repeat left top;
+  line-height: 36px;
 }
 
 .verwijzingen {
-    font-size: larger;
-    padding-left: 40px;
-    background: url("../images/guestbook-icon.png") no-repeat left center;
-    line-height: 36px;
+  font-size: larger;
+  padding-left: 40px;
+  background: url("../images/guestbook-icon.png") no-repeat left center;
+  line-height: 36px;
 }
 
 .node-gastenboek {
-    padding-bottom: 20px;
-    border-bottom: solid 1px #e4e4e4;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #e4e4e4;
 }
 
 .node-gastenboek-form #edit-title {
-    width: 290px;
+  width: 290px;
 }
 
 /*
 *foto albums
 ===============================================*/
 .album-overzicht h3 {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .album-overzicht {
-    width: 210px;
-    float: left;
+  width: 210px;
+  float: left;
 }
 
 /*
@@ -408,16 +384,16 @@ footer {
 ============================================*/
 
 .veld-video {
-    /* class aangemaakt in de view*/
-    float: left;
-    padding-right: 35px;
-    width: 400px;
-    margin-bottom: 35px;
+  /* class aangemaakt in de view*/
+  float: left;
+  padding-right: 35px;
+  width: 400px;
+  margin-bottom: 35px;
 }
 
 .veld-video .views-field-title {
-    font-size: large;
-    padding-bottom: 10px;
+  font-size: large;
+  padding-bottom: 10px;
 }
 
 /*
@@ -425,24 +401,30 @@ footer {
 ==========================================*/
 
 .item-list .pager li {
-    padding: 0 0 1.5em 0;
+  padding: 0 0 1.5em 0;
 }
 
 .item-list ul.pager li {
-    margin: 0 0 0.25em 1.0em;
+  margin: 0 0 0.25em 1em;
 }
 
-.pager li > a, .pager li > span {
-    border-radius: 0;
+.pager li > a,
+.pager li > span {
+  border-radius: 0;
 }
-
 
 /*
 * Footer
 ===========================*/
 
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 11px;
+}
+
 .link__footer {
-    color: white;
+  color: var(--white);
 }
 
 /*user pagina's */
@@ -454,7 +436,7 @@ edit account form*/
 #field-familienaam-add-more-wrapper,
 #field-adres-add-more-wrapper,
 #field-postcode-en-gemeente-add-more-wrapper {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 
 #edit-account .form-item-current-pass label,
@@ -462,22 +444,23 @@ edit account form*/
 #field-familienaam-add-more-wrapper label,
 #field-adres-add-more-wrapper label,
 #field-postcode-en-gemeente-add-more-wrapper label {
-    padding-right: 15px;
+  padding-right: 15px;
 }
 
 /* persoonlijke gegevens opmaken */
-.user_item, ul.user_linken li {
-    line-height: 1.8em;
+.user_item,
+ul.user_linken li {
+  line-height: 1.8em;
 }
 
 /*better login */
 
 #auth_box img {
-    float: none;
+  float: none;
 }
 
 #auth_box a {
-    color: white;
+  color: var(--white);
 }
 
 /*
@@ -485,63 +468,66 @@ edit account form*/
 ================================================================*/
 
 @media only screen and (max-width: 1366px) {
-    /* css code voor tablets in landscape mode
+  /* css code voor tablets in landscape mode
 	De 1366px op aanraden van Koen (was 1024)*/
-    #inner_zijbalk_left h2, #content_bottom_wrap h2, .title_attachment {
-        font-size: 16px;
-    }
+  #inner_zijbalk_left h2,
+  #content_bottom_wrap h2,
+  .title_attachment {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 960px) {
-    /* css code voor tablets in portrait mode */
-    .club_name_img img {
-        width: 55%;
-        height: auto;
-    }
+  /* css code voor tablets in portrait mode */
+  .club_name_img img {
+    width: 55%;
+    height: auto;
+  }
 
-    #inner_zijbalk_left h2, #content_bottom_wrap h2, .title_attachment {
-        font-size: 16px;
-    }
-
+  #inner_zijbalk_left h2,
+  #content_bottom_wrap h2,
+  .title_attachment {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    /* css code voor smartphones in landscape mode */
-    .logo_img img {
-        width: 40%;
-        height: auto;
-    }
+  /* css code voor smartphones in landscape mode */
+  .logo_img img {
+    width: 40%;
+    height: auto;
+  }
 
-    .veld-video {
-        width: 275px;
-    }
+  .veld-video {
+    width: 275px;
+  }
 
-    .node-lid {
-        margin: 0 0 0 35px;
-    }
+  .node-lid {
+    margin: 0 0 0 35px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
-    /* css code voor smartphones in portrait mode */
-    .logo_img img {
-        width: 100%;
-        height: auto;
-    }
+  /* css code voor smartphones in portrait mode */
+  .logo_img img {
+    width: 100%;
+    height: auto;
+  }
 
-    .club_name_img img {
-        width: 100%;
-        height: auto;
-    }
+  .club_name_img img {
+    width: 100%;
+    height: auto;
+  }
 
-    .bcg_header .slogan {
-        font-size: 15px;
-    }
+  .bcg_header .slogan {
+    font-size: 15px;
+  }
 
-    .content img {
-        float: none;
-    }
+  .content img {
+    float: none;
+  }
 
-    .bcg_header .route {
-        padding-top: 25px;
-    }
+  .bcg_header .route {
+    padding-top: 25px;
+  }
 }
