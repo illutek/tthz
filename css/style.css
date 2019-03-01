@@ -86,11 +86,46 @@ td {
 /*
 * events on the homepage with css-grid
 */
-
-.events__grid {
+.view-events .view-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+}
+
+.events__grid {
+  margin-top: 20px;
+}
+
+.view-events .view-content .views-row {
+  color: var(--white);
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 15px;
+  box-shadow: 0 0 10px var(--black);
+}
+
+.view-events .view-content .views-row:hover {
+  box-shadow: 0 0 15px var(--black);
+}
+
+/*
+ * Events teaser
+*/
+
+.event__teaser {
+  color: var(--white); 
+}
+
+.event__teaser:hover {
+  color: var(--white);
+}
+
+.event__teaser-wrap {
+  display: grid;
+}
+
+.event__teaser-wrap:hover {
+  /* box-shadow: 0 0 15px var(--black); */
 }
 
 /*
@@ -148,35 +183,6 @@ td {
   background: url("../images/black-cyclist.png") no-repeat left top;
 }
 
-/*
-*nieuws blok voor alle bezoekers en de leden
-=========================================================*/
-#news_anoniem h2 a {
-  color: #ffffff;
-}
-
-#news_anoniem {
-  background: #7aa095;
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-
-#news_anoniem,
-#news_leden {
-  /* display: inline-block; dit zorgt ervoor dat de div ook onder de afbeelding komt*/
-  padding: 15px;
-}
-
-#news_leden {
-  border: solid 1px #cbe500;
-}
-
-.content_img,
-#news_anoniem img,
-#news_leden img {
-  float: left;
-  padding-right: 15px;
-}
 
 /*
 *bottom region

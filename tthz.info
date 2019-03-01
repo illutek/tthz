@@ -17,5 +17,4 @@ scripts[]   =   js/jquery.backstretch.min.js
 ;REGIONS
 regions[content] = Content
 regions[sidebar_left] = Linker zijbalk
-regions[news_anoniem] = Nieuws anoniem
-regions[news_leden] = Nieuws leden
+regions[events] = Events
