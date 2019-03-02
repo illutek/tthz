@@ -4,9 +4,9 @@ version = VERSION
 core = 7.x
 
 ;CSS
-stylesheets[all][] = css/bootstrap.css
-stylesheets[all][] = css/bootstrap-theme.css
-stylesheets[all][] = css/style.css
+stylesheets[all][] = bower_components/bootstrap/dist/css/bootstrap.min.css
+stylesheets[all][] = bower_components/bootstrap/dist/css/bootstrap-theme.min.css
+stylesheets[all][] = css/styles.css
 
 ;JS
 scripts[]   =   js/bootstrap.min.js

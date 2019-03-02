@@ -1,0 +1,21 @@
+// /////////////////////////
+// @@ FOOTER
+// ////////////////////////
+
+footer {
+  background-color: var(--black);
+}
+
+.footer {
+  padding-top: 15px;
+  color: var(--white);
+  font-size: 11px;
+
+  &__link {
+    color: var(--white);
+
+    &:hover {
+      color: var(--green);
+    }
+  }
+}

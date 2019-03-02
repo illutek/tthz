@@ -1,9 +1,40 @@
-:root {
-  --white: #FBFFFE;
-  --black: #0d1b2a;
-  --blue: #3343A5;
-  --green: #B2EF78;
-}
+
+// ================================
+// @@ ABSTRACTS
+// ================================
+
+@import "00-abstracts/dir";
+
+// ================================
+// @@ BASE
+// ================================
+
+@import "01-base/dir";
+
+// ================================
+// @@ LAYOUT
+// ================================
+
+@import "02-layout/dir";
+
+// ================================
+// @@ REGIONS
+// ================================
+
+@import "03-regions/dir";
+
+// ================================
+// @@ COMPONENTS
+// ================================
+
+@import "04-components/dir";
+
+// ================================
+// @@ CONTENT
+// ================================
+
+@import "05-content/dir";
+
 
 body {
   background-color: var(--white);
@@ -83,30 +114,7 @@ td {
 }
 
 
-/*
-* events on the homepage with css-grid
-*/
-.view-events .view-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-}
 
-.events__grid {
-  margin-top: 20px;
-}
-
-.view-events .view-content .views-row {
-  color: var(--white);
-  background-color: var(--blue);
-  border: 1px solid var(--blue);
-  padding: 15px;
-  box-shadow: 0 0 10px var(--black);
-}
-
-.view-events .view-content .views-row:hover {
-  box-shadow: 0 0 15px var(--black);
-}
 
 /*
  * Events teaser
@@ -137,19 +145,7 @@ td {
   background: #ffffff;
 }
 
-.bcg_header {
-  margin-top: -30px;
-  height: 350px;
-}
 
-.bcg_header #logo_wrap,
-.bcg_header .club_name_wrap {
-  padding-top: 30px;
-}
-
-.bcg_header #logo_wrap {
-  overflow: auto;
-}
 
 
 /*
@@ -203,33 +199,6 @@ td {
 
 
 
-footer {
-  color: #ffffff;
-  padding-top: 15px;
-}
-
-/*
-* Buttons
-========================================*/
-.btn {
-  border-radius: 0px;
-}
-
-.btn-gruppo {
-  color: #ffffff;
-  background-color: #293f47;
-  border-color: #2e6da4;
-  border-color: #ffffff;
-  margin-top: 10px;
-  /*position: absolute;*/
-  left: 5px;
-  bottom: 20px;
-}
-
-.btn-gruppo:hover {
-  color: #ffffff;
-  background-color: #a89400;
-}
 
 /*wat extra padding onder de velden*/
 
@@ -263,9 +232,6 @@ footer {
 
 /*alle extra opmaak*/
 
-.route_map,
-.route_view {
-}
 
 .group-header {
   /*formulier contact*/
@@ -419,19 +385,6 @@ footer {
   border-radius: 0;
 }
 
-/*
-* Footer
-===========================*/
-
-.footer {
-  background-color: var(--black);
-  color: var(--white);
-  font-size: 11px;
-}
-
-.link__footer {
-  color: var(--white);
-}
 
 /*user pagina's */
 /*==============================================

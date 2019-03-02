@@ -1,0 +1,37 @@
+// /////////////////////////
+// @@ EVENTS
+// ////////////////////////
+
+/*
+* events on the homepage with css-grid
+*/
+
+.view-events .view-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.events__grid {
+  margin: 20px 0 0;
+
+  @include respond(tab-port) {
+    margin: 20px 20px 0;
+  }
+}
+
+.view-events .view-content .views-row {
+  color: var(--white);
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 15px;
+  box-shadow: 0 0 10px var(--black);
+}
+
+.view-events .view-content .views-row:hover {
+  box-shadow: 0 0 15px var(--black);
+}

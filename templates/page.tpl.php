@@ -15,22 +15,11 @@
 ?>
 
 
-<!-- bcg_header hier de bootstrap slider, logo, site naam, slogan en googlemaps -->
-<div class="bcg_header"><!-- class bcg_header in bootstrap.css op regel 4850 ongeveer -->
-    <div class="container">
-        <div class="row">
-            <div id="logo_wrap" class="col-md-12">
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-                    <div class="logo_img">
-                        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
-                    </div>
-                </a>
-            </div>
-            <!-- end logo_wrap -->
-        </div>
-    </div>
-</div>
-<!-- end container -->
+
+<!-- bcg_header -->
+<?php
+  include __DIR__ . '/partials/header.inc.php';
+?>
 
 <!-- events -->
 <div class="events">
@@ -76,7 +65,7 @@
            
         </div>
         <!-- end content_wrap -->
-        
+
         <!-- deze zijbalk wordt altijd getoond -->
         <div id="sidebar_left" class="col-md-3 col-md-pull-9">
             <div id="inner_zijbalk_left">
@@ -89,11 +78,6 @@
 </div>
 <!-- end container /container_wrap-->
 
-<!-- footer met de copy vermelding en de contact gegevens degene die ook in de header zijn geplaats
-ga hier voor een inhoudstype aanmaken en dit op een of andere manier hier rechtstreeks printen -->
-<footer class="footer">
- <div class="container">
-   <p>&copy; TTHZ CYCLING TEAM <?php echo date(Y); ?> | <a href="<?php print base_path() ?>privacy-verklaring" class="link__footer">Privacy verklaring</a></p>
- </div>
-
-</footer>
+<?php
+  include __DIR__ . '/partials/footer.inc.php';
+?>

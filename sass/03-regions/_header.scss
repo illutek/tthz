@@ -1,0 +1,20 @@
+// /////////////////////////
+// @@ HEADER
+// ////////////////////////
+
+.bcg_header {
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+  background-color: var(--blue);
+}
+
+.front .bcg_header {
+  height: 350px;
+}
+
+.not-front .bcg_header {
+  height: 250px;
+}
+
+.logo__img {}

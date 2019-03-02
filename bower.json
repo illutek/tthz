@@ -1,3 +1,20 @@
 {
-	"name": "bootstrap""
+  "name": "tthz",
+  "description": "Voor de Wielerclub TTHZ",
+  "main": "index.js",
+  "authors": [
+    "Stefan"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/illutek/tthz",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v3.3.7"
+  }
 }
