@@ -3,21 +3,20 @@
 // ////////////////////////
 
 .btn {
-  border-radius: 0px;
+  @include btn();
+
+  &:hover {
+    color: var(--white);
+
+  }
+
+  &--blue {
+    @include btn($bg: var(--blue));
+  }
+
+  &--green {
+    @include btn($bg: var(--green));
+  }
+
 }
 
-.btn-gruppo {
-  color: #ffffff;
-  background-color: #293f47;
-  border-color: #2e6da4;
-  border-color: #ffffff;
-  margin-top: 10px;
-  /*position: absolute;*/
-  left: 5px;
-  bottom: 20px;
-}
-
-.btn-gruppo:hover {
-  color: #ffffff;
-  background-color: #a89400;
-}

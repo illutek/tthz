@@ -10,13 +10,13 @@
 
   <div class="event__teaser-wrap">
 
-    <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
+    <h2 <?php print $title_attributes; ?>><?php print $title; ?></h2>
     
-    <div class="content"<?php print $content_attributes; ?>>
+    <div class="content event__body"<?php print $content_attributes; ?>>
       <?php print render($content['body']); ?>
     </div>
 
-    <div class="btn">Lees verder</div>
+    <div class="event__btn btn">Lees verder</div>
 
   </div>
 

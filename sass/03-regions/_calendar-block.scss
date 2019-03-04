@@ -1,0 +1,35 @@
+// /////////////////////////
+// @@ CALENDAR BLOCK
+// ////////////////////////
+
+// Block Kalender
+
+.calendar-block {
+  display: grid;
+  
+  &__content {
+
+  }
+
+  &__read-more {
+
+  }
+}
+
+// Block Calendar Teaser
+.calendar {
+
+  &__title {
+    font: {
+      size: 16px;
+      weight: $fw-bold;
+    }
+    margin-bottom: 5px;
+  }
+
+  &__teaser {
+    padding: 10px;
+    border: solid 1px var(--green);
+    margin-bottom: 15px;
+  }
+}

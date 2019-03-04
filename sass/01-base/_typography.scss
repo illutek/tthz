@@ -1,0 +1,41 @@
+// /////////////////////////
+// @@ TYPOGRAHPY
+// ////////////////////////
+
+html {
+  font: {
+    family: $ff-ss;
+    weight: $fw-regular;
+  }
+}
+
+body {
+  font-size: $ff-size;
+  color: var(--black);
+  line-height: 24px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: $fw-bold;
+}
+
+
+h1 {
+  font: {
+    size: 28px;
+  }
+}
+
+h2 {
+  font: {
+    size: 20px;
+  }
+  margin-bottom: 20px;
+}
+
+
+h3 {
+  font: {
+    size: 15px;
+  }
+}

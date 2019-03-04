@@ -1,3 +1,8 @@
+// /////////////////////////
+// @@ STYLES.SCSS
+// ////////////////////////
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
 
 // ================================
 // @@ ABSTRACTS
@@ -36,35 +41,8 @@
 @import "05-content/dir";
 
 
-body {
-  background-color: var(--white);
-  padding-top: 70px;
-}
 
-a {
-  color: #293f47;
-}
 
-a:hover {
-  color: #a89400;
-  text-decoration: none;
-}
-
-h1 {
-  color: #293f47;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-img {
-  float: left;
-  padding: 0 15px 15px 0;
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 table {
   width: 100%;
@@ -98,55 +76,6 @@ td {
   padding: 15px 10px 0 10px;
 }
 
-.dropdown-menu {
-  background-color: #00202b;
-}
-
-.dropdown-menu > li > a {
-  color: #005ea3;
-  line-height: 35px;
-}
-
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-  color: #000;
-  background-color: #000000;
-}
-
-
-
-
-/*
- * Events teaser
-*/
-
-.event__teaser {
-  color: var(--white); 
-}
-
-.event__teaser:hover {
-  color: var(--white);
-}
-
-.event__teaser-wrap {
-  display: grid;
-}
-
-.event__teaser-wrap:hover {
-  /* box-shadow: 0 0 15px var(--black); */
-}
-
-/*
-*
-==========================================================*/
-.container_wrap {
-  /*margin-top: -30px;*/
-  /*om een of andere duistere reden moeten aanpassen*/
-  background: #ffffff;
-}
-
-
-
 
 /*
 *sponsors
@@ -173,7 +102,6 @@ td {
 #inner_zijbalk_left h2,
 #content_bottom_wrap h2,
 .title_attachment {
-  font-size: 20px;
   line-height: 45px;
   padding-left: 50px;
   background: url("../images/black-cyclist.png") no-repeat left top;
@@ -249,22 +177,6 @@ td {
   padding-right: 15px;
 }
 
-/*
-*Blog systeem
-=======================================================*/
-
-.view-id-blog .submitted,
-.node-blog .submitted {
-  padding-bottom: 10px;
-}
-
-.attachment-after {
-  margin-top: 25px;
-}
-
-.attachment-row {
-  padding: 5px 0;
-}
 
 /*
 *leden pagina
@@ -339,17 +251,6 @@ td {
   width: 290px;
 }
 
-/*
-*foto albums
-===============================================*/
-.album-overzicht h3 {
-  font-size: 15px;
-}
-
-.album-overzicht {
-  width: 210px;
-  float: left;
-}
 
 /*
 *video

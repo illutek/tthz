@@ -10,30 +10,16 @@
  * vanaf PHP 5.3 you can use __DIR__ in place of dirname(__FILE__)
  */
 
+// navigation
   include __DIR__ . '/partials/nav.inc.php';
 
-?>
-
-
-
-<!-- bcg_header -->
-<?php
+// bcg_header
   include __DIR__ . '/partials/header.inc.php';
 ?>
 
-<!-- events -->
-<div class="events">
-  <div class="container">
-    <div class="row">
-      <div class="events__grid">
-        <?php print render($page['events']); ?>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- zijbalk content en bottom content, dus alle inhoud -->
-<div class="container container_wrap">
+<div class="container container__wrap">
     <div class="row">
         <div id="content_wrap" class="col-md-9 col-md-push-3">
             <?php if ($page['news_anoniem']): ?>

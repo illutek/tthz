@@ -12,6 +12,23 @@
 
 
 body {
+  background-color: var(--white);
+  padding-top: 70px;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--blue);
+
+  &:hover {
+    color: var(--black);
+    text-decoration: none;
+  }
 }

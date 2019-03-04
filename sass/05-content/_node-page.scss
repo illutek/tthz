@@ -1,0 +1,32 @@
+// /////////////////////////
+// @@ NODE PAGE
+// ////////////////////////
+
+.page-node {
+
+  &__images {
+    max-width: 30vw;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+
+    @include respond(phone) {
+      max-width: 100vw;
+    }
+
+    .field-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+
+    .field-item:first-of-type {
+      grid-column: 1 / -1;
+    }
+    
+  }
+
+  &__body {
+
+  }
+}

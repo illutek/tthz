@@ -1,6 +1,6 @@
 <?php
  /**
-  * 
+  * SCSS 03-regions/_footer.scss
   *
   */
 ?>
