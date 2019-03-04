@@ -53,5 +53,8 @@
     <?php print $content ?>
   </div>
 
-  <div class="btn btn--blue calendar-block__read-more"><?php print ("Meer"); ?></div> 
+  <a href="<?php print base_path() ?>tthz-kalender" class="btn btn--blue calendar-block__read-more">
+    <?php print ("Meer"); ?>
+  </a>
+
 </div>

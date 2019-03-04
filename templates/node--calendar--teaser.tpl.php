@@ -2,6 +2,8 @@
 
 /**
  * @file
+ * SCSS 03-regions/_calendar-block.scss
+ * 
  * 
  */
 ?>
@@ -10,7 +12,7 @@
   <div class="calendar__title"><?php print $title; ?></div>
 
   <div class="calendar__date">
-  <?php print render($content['field_calendar_date']); ?>
+    <?php print render($content['field_calendar_date']); ?>
   </div>
   
   <div class="calendar__body"<?php print $content_attributes; ?>>
