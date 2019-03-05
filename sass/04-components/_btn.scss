@@ -15,8 +15,7 @@
   }
 
   &--green {
-    @include btn($bg: var(--green));
+    @include btn($c: rgba(var(--black), 1), $bg: var(--green));
   }
 
 }
-

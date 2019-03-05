@@ -62,8 +62,8 @@
   }
 }
 
-@mixin btn($bg: transparant) {
-  color: var(--white);
+@mixin btn($c: var(--white), $bg: transparant) {
+  color: $c;
   padding: 10px 20px;
   text-decoration: none;
   cursor: pointer;

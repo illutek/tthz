@@ -12,11 +12,15 @@
   <div class="calendar__title"><?php print $title; ?></div>
 
   <div class="calendar__date">
-    <?php print render($content['field_calendar_date']); ?>
+    <?php print render($content['field_calendar_date']); ?> <br>
+    <?php //echo date(Y); ?>
+
+    
+    
   </div>
   
   <div class="calendar__body"<?php print $content_attributes; ?>>
-    <?php print render($content['body']); ?>
+    <?php print render($content['body']); ?> <br>
   </div>
 
 </div>

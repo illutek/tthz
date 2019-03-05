@@ -2,6 +2,10 @@
 // @@ VARIABLES
 // ////////////////////////
 
+// --black set to rgb color
+// var use in the following way 
+// background-color: rgba(var(--black), 1);
+
 :root {
   --white: #FBFFFE;
   --black: 13, 27, 42;
