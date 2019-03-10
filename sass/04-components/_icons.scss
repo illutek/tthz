@@ -1,0 +1,35 @@
+// /////////////////////////
+// @@ ICONS
+// ////////////////////////
+
+.file-icon {
+  width: 26px;
+  float: left;
+  margin-right: 5px;
+}
+
+.fab, .far, .fa {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.fa-facebook-f {
+
+  &:hover {
+    color: var(--facebook);
+  }
+}
+
+.fa-twitter {
+
+  &:hover {
+    color: var(--twitter);
+  }
+}
+
+.fa-envelope {
+
+  &:hover {
+    color: var(--green);
+  }
+}
