@@ -22,16 +22,6 @@
 <div class="container container__wrap">
     <div class="row">
         <div id="content_wrap" class="col-md-9 col-md-push-3">
-            <?php if ($page['news_anoniem']): ?>
-                <div id="news_anoniem">
-                    <?php print render($page['news_anoniem']); ?>
-                </div><!-- news_anoniem -->
-            <?php endif; ?>
-            <?php if ($page['news_leden']): ?>
-                <div id="news_leden">
-                    <?php print render($page['news_leden']); ?>
-                </div><!-- news_anoniem -->
-            <?php endif; ?>
 
             <div class="content">
                 <a id="main-content"></a>

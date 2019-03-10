@@ -59,12 +59,10 @@
     ?>
     <h3>Linken voor de ingelogde leden</h3>
     <ul class="user_linken">
-        <li>
-            <a href="<?php print base_path() ?>ledenvergaderingen">Verslagen ledenvergaderingen</a>
-        </li>
+       
         <?php if (in_array('bestuur', array_values($user->roles))) { ?>
             <li>
-                <a href="<?php print base_path() ?>bestuursvergaderingen">Verslagen bestuursvergaderingen</a>
+                <a href="<?php print base_path() ?>node/291/webform-results/table">Resultaat inschrijvingen</a>
             </li>
         <?php } ?>
         <li>
