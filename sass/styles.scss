@@ -5,6 +5,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
 
 // ================================
+// @@ FONTAWESOME
+// ================================
+@import url('../bower_components/fontawesome/css/all.min.css');
+
+// ================================
 // @@ ABSTRACTS
 // ================================
 
@@ -128,28 +133,6 @@ td {
 
 
 
-/*wat extra padding onder de velden*/
-
-.field-name-field-rit-nr-gruppo,
-.field-name-field-datum-vertrek,
-.field-name-field-afstand,
-.field-name-field-oefen-afstand,
-.field-name-field-verantwoordelijke,
-.field-name-field-url,
-.field-name-field-plaats,
-.field-name-body,
-.url_gpsroute {
-  padding-bottom: 10px;
-}
-
-.field-name-field-rit-nr-gruppo .field-label {
-  padding-top: 4px;
-}
-
-.field-name-field-rit-nr-gruppo .field-item {
-  padding-left: 5px;
-  font-size: large;
-}
 
 #block-views-sponsors-block-1,
 #block-views-grupposportivo-ritten-block-1,
@@ -168,14 +151,6 @@ td {
   overflow: hidden;
 }
 
-/*
-* ritten opmaak date om vertrekuur na date te plaatsen
-==========================================================*/
-
-.vertrek-date {
-  float: left;
-  padding-right: 15px;
-}
 
 
 /*
@@ -206,24 +181,7 @@ td {
   overflow: hidden;
 }
 
-/*
-*contactform
-================================================*/
 
-#webform-client-form-9 label {
-  width: 120px;
-}
-
-#webform-client-form-9 input,
-#webform-client-form-9 textarea {
-  border: solid 1px #293f47;
-  padding: 5px;
-}
-
-#webform-client-form-9 input[type="submit"] {
-  background: white;
-  padding: 10px;
-}
 
 /*
 *gastenboek

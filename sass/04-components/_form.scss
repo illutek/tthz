@@ -1,0 +1,12 @@
+// /////////////////////////
+// @@ FORMS 
+// ////////////////////////
+
+.form-text, .form-select, .form-textarea {
+  border: 1px solid var(--blue);
+  padding: 5px;
+}
+
+.form-actions {
+  margin: 50px 0;
+}
