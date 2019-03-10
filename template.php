@@ -31,4 +31,7 @@ function tthz_preprocess_button(&$variables)
   if (stristr($variables['element']['#value'], 'Verzenden') !== FALSE) {
     $variables['element']['#attributes']['class'][] = 'btn--blue';
   }
+  if (stristr($variables['element']['#value'], 'Inloggen') !== FALSE) {
+    $variables['element']['#attributes']['class'][] = 'btn--blue';
+  }
 }
