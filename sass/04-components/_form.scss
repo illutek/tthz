@@ -5,6 +5,7 @@
 .form-text, .form-select, .form-textarea {
   border: 1px solid var(--blue);
   padding: 5px;
+  max-width: 85vw;
 }
 
 .form-actions {
