@@ -22,7 +22,7 @@
         <li><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">Home</a></li>
         <li><a href="<?php print base_path() ?>tthz-contacteren">Contacteren</a></li>
         <li><a href="<?php print base_path() ?>#">Bestuur-Team</a></li>
-        <li><a href="<?php print base_path() ?>#">Clubregelement</a></li>
+        <li><a href="<?php print base_path() ?>reglement">Clubregelement</a></li>
         <li><a href="<?php print base_path() ?>fotoalbums">Fotoalbums</a></li>
       </ul>
     </div>
