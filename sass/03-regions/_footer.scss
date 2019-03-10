@@ -18,4 +18,22 @@ footer {
       color: var(--green);
     }
   }
+
+  &-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__right {
+      text-align: right;
+    }
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+
+      &__right {
+        margin-top: 20px;
+        text-align: left;
+      }
+    }
+  }
 }
