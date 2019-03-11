@@ -46,7 +46,9 @@
 @import "05-content/dir";
 
 
-
+.navbar__item {
+  margin-bottom: 15px;
+}
 
 
 table {
@@ -149,32 +151,6 @@ td {
   width: 100%;
   display: inline-block;
   overflow: hidden;
-}
-
-/*
-*gastenboek
-===============================================*/
-
-.person_icon {
-  padding: 0 0 20px 32px;
-  background: url("../images/icon-person-32.png") no-repeat left top;
-  line-height: 36px;
-}
-
-.verwijzingen {
-  font-size: larger;
-  padding-left: 40px;
-  background: url("../images/guestbook-icon.png") no-repeat left center;
-  line-height: 36px;
-}
-
-.node-gastenboek {
-  padding-bottom: 20px;
-  border-bottom: solid 1px #e4e4e4;
-}
-
-.node-gastenboek-form #edit-title {
-  width: 290px;
 }
 
 
@@ -313,7 +289,4 @@ ul.user_linken li {
     float: none;
   }
 
-  .bcg_header .route {
-    padding-top: 25px;
-  }
 }
