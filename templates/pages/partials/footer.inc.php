@@ -9,7 +9,7 @@
  <div class="container">
     <div class="footer-wrap">
       <div class="footer-wrap__left">
-        <p>&copy; TTHZ CYCLING TEAM <?php echo date(Y); ?> | <a href="<?php print base_path() ?>privacy-verklaring" class="footer__link">Privacy verklaring</a></p>
+        <p>&copy; TTHZ CYCLING TEAM <?php echo date(Y); ?> | Vredestraat 3 3550 Heusden-Zolder | <a href="<?php print base_path() ?>privacy-verklaring" class="footer__link">Privacy verklaring</a></p>
       </div>
       <div class="footer-wrap__right">
         <a class="footer__link--social" href="https://www.facebook.com/groups/135633596623338/">
