@@ -106,13 +106,7 @@ td {
   line-height: 32px;
 }
 
-#inner_zijbalk_left h2,
-#content_bottom_wrap h2,
-.title_attachment {
-  line-height: 45px;
-  padding-left: 50px;
-  background: url("../images/black-cyclist.png") no-repeat left top;
-}
+
 
 
 /*
@@ -153,23 +147,6 @@ td {
   overflow: hidden;
 }
 
-
-/*
-*video
-============================================*/
-
-.veld-video {
-  /* class aangemaakt in de view*/
-  float: left;
-  padding-right: 35px;
-  width: 400px;
-  margin-bottom: 35px;
-}
-
-.veld-video .views-field-title {
-  font-size: large;
-  padding-bottom: 10px;
-}
 
 /*
 *pager opmaak
@@ -259,14 +236,6 @@ ul.user_linken li {
     width: 40%;
     height: auto;
   }
-
-  .veld-video {
-    width: 275px;
-  }
-
-  .node-lid {
-    margin: 0 0 0 35px;
-  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -279,14 +248,6 @@ ul.user_linken li {
   .club_name_img img {
     width: 100%;
     height: auto;
-  }
-
-  .bcg_header .slogan {
-    font-size: 15px;
-  }
-
-  .content img {
-    float: none;
   }
 
 }
