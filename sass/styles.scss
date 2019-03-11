@@ -107,36 +107,6 @@ td {
 }
 
 
-
-
-/*
-*bottom region
-=========================================================*/
-
-#content_bottom_wrap {
-  clear: both;
-  margin-top: 25px;
-}
-
-#content_bottom_wrap h2 {
-  font-size: 18px;
-}
-
-#content_bottom_wrap p {
-  min-height: 60px;
-}
-
-
-
-
-
-#block-views-sponsors-block-1,
-#block-views-grupposportivo-ritten-block-1,
-#block-views-oefenritten-block-1,
-#block-views-klassiekers-block-1 {
-  margin: 25px 0 35px 0;
-}
-
 /*alle extra opmaak*/
 
 
@@ -202,52 +172,3 @@ ul.user_linken li {
   color: var(--white);
 }
 
-/*
-*media querys
-================================================================*/
-
-@media only screen and (max-width: 1366px) {
-  /* css code voor tablets in landscape mode
-	De 1366px op aanraden van Koen (was 1024)*/
-  #inner_zijbalk_left h2,
-  #content_bottom_wrap h2,
-  .title_attachment {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  /* css code voor tablets in portrait mode */
-  .club_name_img img {
-    width: 55%;
-    height: auto;
-  }
-
-  #inner_zijbalk_left h2,
-  #content_bottom_wrap h2,
-  .title_attachment {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  /* css code voor smartphones in landscape mode */
-  .logo_img img {
-    width: 40%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  /* css code voor smartphones in portrait mode */
-  .logo_img img {
-    width: 100%;
-    height: auto;
-  }
-
-  .club_name_img img {
-    width: 100%;
-    height: auto;
-  }
-
-}
