@@ -1,0 +1,69 @@
+// /////////////////////////
+// @@ NODE BESTUUR 
+// ////////////////////////
+
+.node-bestuur {
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__img {
+
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(var(--black), 0.5);
+    padding: 10px;
+    color: var(--white);
+    min-height: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: rgba(var(--black), 0.9);
+    }
+    a {
+      color: var(--white);
+    }
+  }
+
+
+}
+
+
+.view-bestuur {
+
+  &__leden {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    @include respond(tab-land) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__lid {
+
+  }
+}
