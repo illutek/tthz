@@ -1,0 +1,30 @@
+// /////////////////////////
+// @@ SIDEBAR  
+// ////////////////////////
+
+.sidebar {
+
+  @include respond(tab-port) {
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: rgba(var(--black), .2);
+      margin-top: 30px;
+    }
+  }
+
+  &__inner {
+    h2 {
+      line-height: 45px;
+      padding-left: 50px;
+      background: url("../images/black-cyclist.png") no-repeat left top;
+    }
+
+    @include respond(tab-port) {
+      margin-top: 30px;
+    }
+  }
+
+}
