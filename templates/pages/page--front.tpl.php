@@ -37,5 +37,9 @@
 <!-- end container /container_wrap-->
 
 <?php
+  include __DIR__ . '/partials/sponsors.inc.php';
+?>
+
+<?php
   include __DIR__ . '/partials/footer.inc.php';
 ?>

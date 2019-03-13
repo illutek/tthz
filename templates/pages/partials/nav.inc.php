@@ -23,6 +23,7 @@
         <li class="navbar__item"><a href="<?php print base_path() ?>tthz-contacteren">Contacteren</a></li>
         <li class="navbar__item"><a href="<?php print base_path() ?>bestuur">Bestuur-Team</a></li>
         <li class="navbar__item"><a href="<?php print base_path() ?>reglement">Clubregelement</a></li>
+        <li class="navbar__item"><a href="<?php print base_path() ?>hoe-sponseren">Hoe sponseren</a></li>
         <li class="navbar__item"><a href="<?php print base_path() ?>fotoalbums">Fotoalbums</a></li>
       </ul>
     </div>

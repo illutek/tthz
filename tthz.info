@@ -19,3 +19,4 @@ scripts[]   =   js/email.js
 regions[content] = Content
 regions[sidebar_left] = Linker zijbalk
 regions[events] = Events
+regions[sponsors] = Sponsors
