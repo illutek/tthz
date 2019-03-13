@@ -8,7 +8,7 @@
 
 <div class="container container__wrap">
   <div class="row">
-    <div id="content_wrap" class="col-md-9 col-md-push-3">
+    <div id="content_wrap" class="col-sm-9 col-md-9 col-sm-push-3 col-md-push-3">
 
       <div class="content">
         <a id="main-content"></a>
