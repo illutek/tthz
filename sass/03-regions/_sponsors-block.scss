@@ -1,0 +1,45 @@
+// /////////////////////////
+// @@ SPONSORS
+// ////////////////////////
+
+.sponsors {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.sponsor {
+  &-node {
+    padding: 20px;
+  }
+
+  &__content {}
+
+  &__logo, &-msg__logo {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  &__url {
+    text-align: center;
+  }
+
+  &-msg {
+    @include boxshadow();
+    padding: 20px;
+    max-width: 250px;
+  }
+
+}
+
+.view {
+  &-sponsors {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    grid-gap: 20px;
+  }
+
+  &-sponsor {
+    @include boxshadow();
+  }
+}

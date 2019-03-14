@@ -52,14 +52,29 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
+
     <div class="view-sponsors">
       <?php print $rows; ?>
+
+      <!-- advertising message -->
+      <?php include __DIR__ . '/../partials/view/sponsor-msg.inc.php'; ?>
+
     </div>
+
   <?php elseif ($empty): ?>
-    <div class="view-empty">
-      <?php print $empty; ?>
-    </div>
+
+      <?php // print $empty; ?>
+
+    <!-- advertising message even if there are no sponsors
+     * the standaard print $empty in comment
+     * and on view UI level a Unfiltered text field with dummy text
+     -->
+    <?php include __DIR__ . '/../partials/view/sponsor-msg.inc.php'; ?>
+
   <?php endif; ?>
+
+  
+  
 
   <?php if ($pager): ?>
     <?php print $pager; ?>
