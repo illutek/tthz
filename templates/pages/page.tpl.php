@@ -11,20 +11,20 @@
  */
 
 // navigation
-  include __DIR__ . '/partials/nav.inc.php';
+  include __DIR__ . '/../partials/shared/nav.inc.php';
 
 // bcg_header
-  include __DIR__ . '/partials/header.inc.php';
+  include __DIR__ . '/../partials/shared/header.inc.php';
 
 // zijbalk content en bottom content, dus alle inhoud
 
-include __DIR__ . '/partials/main-content.inc.php';
+include __DIR__ . '/../partials/main-content.inc.php';
       
 // end content_wrap -->
       
 // deze zijbalk wordt altijd getoond -->
       
-include __DIR__ . '/partials/sidebar.inc.php';
+include __DIR__ . '/../partials/sidebar.inc.php';
 ?>
       <!-- end sidebar_left -->
   </div>
@@ -33,5 +33,5 @@ include __DIR__ . '/partials/sidebar.inc.php';
 <!-- end container /container_wrap-->
 
 <?php
-include __DIR__ . '/partials/footer.inc.php';
+include __DIR__ . '/../partials/shared/footer.inc.php';
 ?>

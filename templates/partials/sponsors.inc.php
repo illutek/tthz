@@ -9,7 +9,9 @@
 <div class="sponsors">
   <div class="container">
     <div class="row">
-      <?php print render($page['sponsors']); ?>
+      <div class="sponsors-inner">
+        <?php print render($page['sponsors']); ?>
+      </div>
     </div>
   </div>
 </div>

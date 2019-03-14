@@ -11,10 +11,10 @@
  */
 
 // navigation
-  include __DIR__ . '/partials/nav.inc.php';
+  include __DIR__ . '/../partials/shared/nav.inc.php';
 
 // bcg_header
-  include __DIR__ . '/partials/header.inc.php';
+  include __DIR__ . '/../partials/shared/header.inc.php';
 ?>
 
 
@@ -48,5 +48,5 @@
 <!-- end container /container_wrap-->
 
 <?php
-  include __DIR__ . '/partials/footer.inc.php';
+  include __DIR__ . '/../partials/shared/footer.inc.php';
 ?>
