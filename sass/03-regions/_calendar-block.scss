@@ -33,5 +33,6 @@
     padding: 10px;
     border: solid 1px var(--green);
     margin-bottom: 15px;
+    @include boxshadow($transp: .1);
   }
 }

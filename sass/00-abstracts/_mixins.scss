@@ -73,3 +73,7 @@
   background: $bg;
   border-radius: 0;
 }
+
+@mixin boxshadow($blur: 15px, $transp: 0.3) {
+  box-shadow: 0 0 $blur rgba(var(--black), $transp);
+}
