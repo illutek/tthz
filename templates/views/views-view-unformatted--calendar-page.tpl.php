@@ -3,7 +3,7 @@
 /**
  * @file
  * Default simple view template to display a list of rows.
- * 
+ *
  * SCSS - 05-content/_node-calendar.scss
  *
  * @ingroup views_templates

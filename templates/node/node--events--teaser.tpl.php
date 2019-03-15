@@ -1,7 +1,8 @@
 <?php
-
 /**
  * @file
+ *
+ * SCSS - 03-regions/_events.scss
  *
  */
 ?>
@@ -11,7 +12,7 @@
   <div class="event__teaser-wrap">
 
     <h2 <?php print $title_attributes; ?>><?php print $title; ?></h2>
-    
+
     <div class="content event__body"<?php print $content_attributes; ?>>
       <?php print render($content['body']); ?>
     </div>
@@ -20,5 +21,4 @@
 
   </div>
 
-  
-  </a>
+</a>

@@ -1,11 +1,9 @@
 <?php
-
 /**
  * @file
- * 
+ *
  * SCSS - 03-regions/_calendar-block.scss
- * 
- * 
+ *
  */
 ?>
 <div id="<?php print $block_html_id; ?>" class="calendar-block"<?php print $attributes; ?>>

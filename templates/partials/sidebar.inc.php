@@ -1,7 +1,8 @@
 <?php
  /**
   * 2019-03-11
-
+  * 
+  * SCSS - 03-regions/_sidebar.scss
   *
   */
 ?>

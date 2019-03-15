@@ -1,7 +1,7 @@
 <?php
  /**
   * 2019-03-12
-  *
+  * SCSS - 03-regions/_sponsors-block.scss
   *
   */
 ?>

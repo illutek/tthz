@@ -1,24 +1,25 @@
 <?php
-
 /**
  * @file
  *
  * @ingroup themeable
- * 
+ *
+ * SCSS - 05-content/_node-event.scss
+ *
  * $output = field_view_field('node', $node, 'field_event_date', array(
  *   'label' => 'hidden',
- * )); 
+ * ));
  *   print render ($output);
- * 
+ *
  * $eventDate = field_get_items('node', $node, 'field_event_date');
  * $date1 = date_create($eventDate[0]['value']);
  * $day1 = date_format($date1, 'jS');
  * $month1 = date_format($date1, 'F');
- * 
+ *
  * print $month1.' '.$day1;
- * 
+ *
  * http://www.tenten71.com/drupal-theme-from-scratch/advanced-drupal-7-theming-techniques.php
- * 
+ *
  */
 ?>
 <div class="event-node"<?php print $attributes; ?>>
@@ -33,9 +34,8 @@
 
   <div class="event-node__date">
     <?php print render($content['field_event_date']); ?>
-    
   </div>
-  
+
   <?php $field = field_get_items('node', $node, 'field_event_img'); ?>
 
   <?php if ($field) { ?>
@@ -52,18 +52,14 @@
     <?php print render($content['field_event_file']); ?>
   </div>
 
-  <?php 
+  <?php
   // $eventDate = field_get_items('node', $node, 'field_event_date');
   // $date1 = date_create($eventDate[0]['value']);
   // $day1 = date_format($date1, 'd');
   // $wday1 = date_format($date1, 'l');
   // $month1 = date_format($date1, 'F');
   // $year = date_format($date1, 'Y');
-  
   // print $wday1 . ' ' . $day1 . ' ' . $month1 . ' ' . $year . '<br>';
-
   // print date("d/m/y", time());
-
   ?>
-
 </div>
