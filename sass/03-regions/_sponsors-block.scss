@@ -6,6 +6,10 @@
   margin-bottom: 30px;
   padding-top: 20px;
   padding-bottom: 40px;
+
+  &-inner {
+    padding: 0 15px;
+  }
 }
 
 .sponsor {
@@ -35,7 +39,7 @@
 .view {
   &-sponsors {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fill, minmax(220px, auto));
     grid-gap: 20px;
   }
 
