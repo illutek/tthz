@@ -5,9 +5,161 @@
 .form-text, .form-select, .form-textarea {
   border: 1px solid var(--blue);
   padding: 5px;
-  max-width: 85vw;
+  background: var(--white);
 }
 
 .form-actions {
   margin: 50px 0;
 }
+
+.form-radios {
+  label {
+    // display: inline-block;
+  }
+}
+
+.webform-register {
+
+  .form-item {
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  label {
+    // display: block;
+  }
+
+  // gender checkbox
+  .form-item-submitted-gender-box-geslacht {
+    float: left;
+    margin-right: 10px;
+
+    .option {
+      font: {
+        weight: $fw-regular;
+      }
+    }
+  }
+}
+
+.component {
+  &__given-name, &__lastname {
+    width: 49%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__birth-date, &__gender {
+    width: 49%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__email {
+    width: 65%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__phone {
+    width: 33%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__address {
+    width: 100%;
+  }
+
+  &__commune {
+    width: 79%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+  }
+
+  &__zip-code {
+    width: 20%;
+
+    @include respond(phone) {
+      width: 50%;
+    }
+  }
+
+}
+
+.input {
+  &__address {
+    width: 99%;
+  }
+
+  &__commune {
+    width: 100%;
+
+  }
+
+  &__zip-code {
+    width: 100%;
+  }
+
+  // on contact form
+  &__name, &__email, &__subject {
+    width: 100%;
+  }
+}
+
+
+// contact form
+.webform-client-form-9 {
+  label {
+    display: block;
+  }
+}
+
+
+// //////////////////////
+// Webform-layout override
+// /////////////////////
+
+.webform-layout-box.horiz,
+.webform-layout-box.equal {
+  // word-spacing: -1em; /* remove the space between inline-blocks */
+}
+
+.webform-layout-box.horiz > *,
+.webform-layout-box.equal > * {
+  display: inline-block;
+  vertical-align: top;
+  word-spacing: normal;
+  /* hack for IE 6&7 */
+  zoom: 1;
+  *display: inline;
+}
+
+.webform-layout-box.horiz > * + * {
+  // margin-left: 1em; /* add space between variable-width blocks */
+}
+
+.webform-layout-box > .form-item input{
+  max-width: 100%;
+}
+
+.webform-layout-box.equal.child-width-2  > * {width: 50%;}
+.webform-layout-box.equal.child-width-3  > * {width: 33.3%;}
+.webform-layout-box.equal.child-width-4  > * {width: 25%;}
+.webform-layout-box.equal.child-width-5  > * {width: 20%;}
+.webform-layout-box.equal.child-width-6  > * {width: 16.6%;}
+.webform-layout-box.equal.child-width-7  > * {width: 14.2%;}
+.webform-layout-box.equal.child-width-8  > * {width: 12.5%;}
+.webform-layout-box.equal.child-width-9  > * {width: 11.1%;}
+
