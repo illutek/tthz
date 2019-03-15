@@ -2,11 +2,8 @@
 // @@ EVENTS
 // ////////////////////////
 
-/*
-* events on the homepage with css-grid
-*/
-
-.view-events .view-content {
+// views-view--events.tpl.php and views-view-unformatted--events.tpl.php
+.view-events {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
@@ -16,7 +13,22 @@
   }
 }
 
-.events {
+.view-event {
+  color: var(--white);
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 15px;
+  box-shadow: 0 0 10px var(--black);
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 15px var(--black);
+    border: 1px solid var(--white);
+  }
+}
+
+// events.inc.php only on the frontpage
+.events-region {
 
   &__grid {
     margin: 0 0 30px;
@@ -27,6 +39,7 @@
   }
 }
 
+// node-events-teaser.tpl.php
 .event {
 
   &__teaser {
@@ -54,16 +67,3 @@
   }
 }
 
-.view-events .view-content .views-row {
-  color: var(--white);
-  background-color: var(--blue);
-  border: 1px solid var(--blue);
-  padding: 15px;
-  box-shadow: 0 0 10px var(--black);
-  transition: all 0.3s;
-}
-
-.view-events .view-content .views-row:hover {
-  box-shadow: 0 0 15px var(--black);
-  border: 1px solid var(--white);
-}

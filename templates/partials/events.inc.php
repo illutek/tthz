@@ -5,10 +5,10 @@
   */
 ?>
 
-<div class="events">
+<div class="events-region">
   <div class="container">
     <div class="row">
-      <div class="events__grid">
+      <div class="events-region__grid">
         <?php print render($page['events']); ?>
       </div>
     </div>
