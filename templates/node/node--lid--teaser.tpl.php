@@ -8,7 +8,10 @@
 ?>
 
 <div id="node-<?php print $node->nid; ?>" class="node-lid"<?php print $attributes; ?>>
-    <div class="node-lid__image">        
-        <?php print render($content['field_image']); ?>
-    </div>
+  <div class="node-lid__name">
+    <h3><?php print $title; ?></h3>
+  </div>
+  <div class="node-lid__image">        
+    <?php print render($content['field_image']); ?>
+  </div>
 </div>
