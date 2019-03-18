@@ -5,7 +5,7 @@
   */
 ?>
 
-<div class="events-region">
+<section class="events-region">
   <div class="container">
     <div class="row">
       <div class="events-region__grid">
@@ -13,4 +13,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

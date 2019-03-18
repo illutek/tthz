@@ -1,12 +1,12 @@
 <?php
  /**
-  * 2019-03-12
-  * SCSS - 03-regions/_sponsors-block.scss
-  *
-  */
+ * 2019-03-12
+ * SCSS - 03-regions/_sponsors-block.scss
+ *
+*/
 ?>
 
-<div class="sponsors">
+<section class="sponsors">
   <div class="container">
     <div class="row">
       <div class="sponsors-inner">
@@ -14,4 +14,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>
