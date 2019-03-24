@@ -1,6 +1,10 @@
 <?php 
 /**
  * SCSS 03-regions/_header.scss
+ * for the slider images now i used https://www.jquery-backstretch.com/
+ * 
+ * *A better alternative would be 
+ * https://codepen.io/bradtraversy/pen/oVPBaa
  * 
  */
 ?>
