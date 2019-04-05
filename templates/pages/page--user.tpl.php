@@ -13,13 +13,12 @@
   include __DIR__ . '/../partials/shared/nav.inc.php';
 
 // bcg_header
-  include __DIR__ . '/../partials/shared/header.inc.php';
+  // include __DIR__ . '/../partials/shared/header.inc.php';
 
 ?>
 
 <div class="container container__wrap">
-  <div class="row">
-    <div id="content_wrap" class="col-md-12">
+  <div class="login">
 <!-- // content in the absence of sidebar -->
 
 <?php
@@ -28,15 +27,13 @@
 
 ?>
 
-    </div>
-      <!-- end content_wrap -->
   </div>
-    <!-- end row -->
+      <!-- end content_wrap -->
+
 </div>
 <!-- end container /container_wrap-->
 
 <?php
-
 // footer
   include __DIR__ . '/../partials/shared/footer.inc.php';
 ?>
