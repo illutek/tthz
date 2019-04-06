@@ -35,23 +35,12 @@
  */
 ?>
 <div class="profile"<?php print $attributes; ?>>
+<?php if (in_array('bestuur', array_values($user->roles))) { ?>
     <p>Welkom op je account pagina.<br>Onderaan deze pagina bij 'Linken voor de ingelogde leden' een
         aantal items die enkel zichtbaar zijn voor de uiteraard ingelogde leden</p>
     <p>Om later terug te keren naar deze pagina, dit kan door op je gebruikersnaam te klikken
         bovenaan rechts op de menubalk.</p>
-    <h3>Persoonlijke gegevens</h3>
-    <div class="user_item">
-        <?php print render($user_profile['field_voornaam']); ?>
-    </div>
-    <div class="user_item">
-        <?php print render($user_profile['field_familienaam']); ?>
-    </div>
-    <div class="user_item">
-        <?php print render($user_profile['field_adres']); ?>
-    </div>
-    <div class="user_item">
-        <?php print render($user_profile['field_postcode_en_gemeente']); ?>
-    </div>
+        <?php } ?>
 
     <?php
     global $user;
@@ -64,10 +53,11 @@
             <li>
                 <a href="<?php print base_path() ?>node/291/webform-results/table">Resultaat inschrijvingen</a>
             </li>
+            <li>
+              <?php print l(t('Je account bewerken'), "user/{$GLOBALS['user']->uid}/edit"); ?>
+            </li>
         <?php } ?>
-        <li>
-            <?php print l(t('Je account bewerken'), "user/{$GLOBALS['user']->uid}/edit"); ?>
-        </li>
+       
         <li>
             <a href="<?php print base_path() ?>user/logout">Uitloggen</a>
         </li>

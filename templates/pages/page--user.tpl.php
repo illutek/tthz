@@ -20,15 +20,18 @@
 <div class="container container__wrap">
   <div class="login">
 <!-- // content in the absence of sidebar -->
+    <div class="login__form">
+      <?php include __DIR__ . '/../partials/main-content-less-sidebar.inc.php'; ?>
+    </div>
 
-<?php
-
-  include __DIR__ . '/../partials/main-content-less-sidebar.inc.php';
-
-?>
+    <div class="login__club-logo">
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+        <img src="<?php print base_path() . path_to_theme(); ?>/images/logo-login.jpg" alt="tthz logo">
+      </a>  
+    </div>
 
   </div>
-      <!-- end content_wrap -->
+      <!-- end login -->
 
 </div>
 <!-- end container /container_wrap-->
