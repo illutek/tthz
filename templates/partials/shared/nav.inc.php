@@ -25,7 +25,17 @@
         <li class="navbar__item"><a href="<?php print base_path() ?>reglement">Clubregelement</a></li>
         <li class="navbar__item"><a href="<?php print base_path() ?>hoe-sponseren">Hoe sponseren</a></li>
         <li class="navbar__item"><a href="<?php print base_path() ?>fotoalbums">Fotoalbums</a></li>
-        <li class="navbar__item"><a href="<?php print base_path() ?>user">Login</a></li>
+
+        <?php global $user;
+          if ($user->uid != 0) { ?>
+            <li class="navbar__item"><a href="<?php print base_path() ?>user/logout">Uitloggen</a></li>
+          <?php } else { ?>
+            <li class="navbar__item"><a href="<?php print base_path() ?>user">Inloggen</a></li>
+          <?php } ?>
+       
+        
+         
+
       </ul>
     </div>
   </div>

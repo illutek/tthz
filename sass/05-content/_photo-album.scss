@@ -2,31 +2,57 @@
 // @@ PHOTOALBUM
 // ////////////////////////
 
-// Overview albums - view
-.view-fotoalbums {
-  .view-content {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+.albums {
+  // message for visitors who are not logged in
+  // on page--node--335.tpl.php
+  &__msg {
+    color: var(--white);
+    background: var(--blue);
+    padding: 20px;
 
-    @include respond(phone) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    
   }
-}
-// Photo album
-.photo-album {
-  .field-items {
+
+  &__view {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
 
-    @include respond(phone) {
-      grid-template-columns: repeat(2, 1fr);
+  &__teaser {
+    padding: 15px;
+    border: 1px solid var(--blue);
+  }
+
+  // full node node--foto-albums.tpl.php
+  &__content {
+    margin-bottom: 30px;
+  }
+
+  // on full content field--field-image.tpl.php
+
+  &__field {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-gap: 10px;
+    // grid-auto-rows: 250px 170px;
+    // grid-auto-flow: dense;
+
+    margin-bottom: 30px;
+  }
+
+  &__field-item {
+    img {
+      // object-fit: cover;
     }
-  } 
-}
 
+    &:first-child {
+      grid-area: 1 / 1 / span 2 / span 2;
+    }
+
+    &:nth-child(3n) {
+      // grid-column: span 2;
+    }
+  }
+
+}
 
