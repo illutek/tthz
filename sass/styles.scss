@@ -10,6 +10,11 @@
 @import url('../bower_components/fontawesome/css/all.min.css');
 
 // ================================
+// @@ Bootstrap
+// ================================
+@import url('../bower_components/bootstrap/dist/css/bootstrap.min.css');
+
+// ================================
 // @@ ABSTRACTS
 // ================================
 
@@ -46,9 +51,7 @@
 @import "05-content/dir";
 
 
-.navbar__item {
-  margin-bottom: 15px;
-}
+
 
 
 table {
@@ -71,43 +74,8 @@ td {
   padding-right: 0.5em;
 }
 
-#toolbar {
-  margin-top: 50px;
-}
-
-/*
-*aanpassing nav menu van bootstrap
-============================================================*/
-.navbar-inverse .navbar-nav > li > a {
-  color: var(--green);
-  padding: 15px 10px 0 10px;
-}
 
 
-/*
-*sponsors
-=======================================================*/
-.sponsor_wrap {
-  width: 100%;
-  padding-bottom: 10px;
-  border-bottom: solid 1px #e4e4e4;
-  /*dit zorgt ervoor dat de div ook onder de afbeelding komt*/
-  display: inline-block;
-  overflow: hidden;
-}
-
-.sponsor_sidebar_wrap td {
-  border-top: solid 1px #ffffff;
-  border-bottom: none;
-}
-
-.sponsor_sidebar_wrap .sponsor_sidebar_title a {
-  font-size: 16px;
-  line-height: 32px;
-}
-
-
-/*alle extra opmaak*/
 
 
 .group-header {
@@ -135,40 +103,8 @@ td {
   border-radius: 0;
 }
 
-
-/*user pagina's */
-/*==============================================
-edit account form*/
-#edit-account .form-item-current-pass,
-#edit-account .form-item-mail,
-#field-voornaam-add-more-wrapper,
-#field-familienaam-add-more-wrapper,
-#field-adres-add-more-wrapper,
-#field-postcode-en-gemeente-add-more-wrapper {
-  margin: 2em 0;
-}
-
-#edit-account .form-item-current-pass label,
-#field-voornaam-add-more-wrapper label,
-#field-familienaam-add-more-wrapper label,
-#field-adres-add-more-wrapper label,
-#field-postcode-en-gemeente-add-more-wrapper label {
-  padding-right: 15px;
-}
-
 /* persoonlijke gegevens opmaken */
 .user_item,
 ul.user_linken li {
   line-height: 1.8em;
 }
-
-/*better login */
-
-#auth_box img {
-  float: none;
-}
-
-#auth_box a {
-  color: var(--white);
-}
-
