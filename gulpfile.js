@@ -55,13 +55,7 @@ const path = {
         png: '*.png'
     },
     watch: {
-        php: 'templates/**/*.php',
-        theme: '*.php',
-        js: 'js/**/*.js',
-        info: '*.info',
-        style: 'sass/**/*.scss',
-        img: 'images/**/*.*',
-        fonts: 'fonts/**/*.*'
+        style: 'sass/**/*.scss'
     },
     clean: './dist'
 };
@@ -113,7 +107,6 @@ gulp.task('info:dist', function () {
 gulp.task('style:dist', function () {
     gulp.src(path.src.style)
         .pipe(prettyError())
-        .pipe(sourcemaps.init())
         .pipe(sass({
             sourceMap: true,
             errLogToConsole: true
@@ -124,7 +117,6 @@ gulp.task('style:dist', function () {
         }))
         .pipe(cleancss({compatibility: 'ie9'}))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('css'))
         .pipe(gulp.dest(path.dist.css));
 });
 
@@ -143,7 +135,7 @@ gulp.task('png:dist', function () {
         .pipe(gulp.dest(path.dist.png));
 });
 
-gulp.task('dist', [
+gulp.task('deploy', [
     'bower:dist',
     'php:dist',
     'theme:dist',
@@ -155,34 +147,33 @@ gulp.task('dist', [
     'png:dist'
 ]);
 
+
+gulp.task('style:sass', function () {
+    gulp.src(path.src.style)
+        .pipe(prettyError())
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            sourceMap: true,
+            errLogToConsole: true
+        }))
+        .pipe(prefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('css'))
+});
+
 /**
  * Watch
  *   
 */
 
 gulp.task('watch', function(){
-    watch([path.watch.php], function(event, cb) {
-        gulp.start('php:dist');
-    });
-    watch([path.watch.theme], function(event, cb) {
-        gulp.start('theme:dist');
-    });
-    watch([path.watch.info], function(event, cb) {
-        gulp.start('info:dist');
-    });
     watch([path.watch.style], function(event, cb) {
-        gulp.start('style:dist');
-    });
-    watch([path.watch.js], function(event, cb) {
-        gulp.start('js:dist');
-    });
-    watch([path.watch.img], function(event, cb) {
-        gulp.start('img:dist');
-    });
-    watch([path.watch.fonts], function(event, cb) {
-        gulp.start('fonts:dist');
+        gulp.start('style:sass');
     });
 });
 
 
-gulp.task('default', ['dist', 'watch']);
+gulp.task('default', ['watch']);
