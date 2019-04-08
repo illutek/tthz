@@ -14,7 +14,7 @@
     <div class="sponsor__content">
 
       <div class="sponsor__logo">
-        <?php print render($content['field_image']); ?>
+        <?php print render($content['field_sponsor_logo']); ?>
       </div>
       <div class="sponsor__url">
         <?php print render($content['field_url']); ?>
