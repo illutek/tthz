@@ -35,14 +35,19 @@
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
     grid-gap: 10px;
     // grid-auto-rows: 250px 170px;
-    // grid-auto-flow: dense;
+    grid-auto-flow: dense;
 
     margin-bottom: 30px;
   }
 
   &__field-item {
     img {
-      // object-fit: cover;
+      object-fit: cover;
+    }
+
+    &:hover {
+      filter: brightness(50%);
+      transform: scale(1.01);
     }
 
     &:first-child {
@@ -55,4 +60,3 @@
   }
 
 }
-
