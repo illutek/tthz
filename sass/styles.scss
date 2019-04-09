@@ -74,18 +74,6 @@ td {
   padding-right: 0.5em;
 }
 
-
-
-
-
-.group-header {
-  /*formulier contact*/
-  width: 100%;
-  display: inline-block;
-  overflow: hidden;
-}
-
-
 /*
 *pager opmaak
 ==========================================*/
@@ -101,10 +89,4 @@ td {
 .pager li > a,
 .pager li > span {
   border-radius: 0;
-}
-
-/* persoonlijke gegevens opmaken */
-.user_item,
-ul.user_linken li {
-  line-height: 1.8em;
 }
