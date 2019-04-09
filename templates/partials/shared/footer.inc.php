@@ -18,7 +18,7 @@
         <a class="footer__link--social" href="https://twitter.com/">
           <i class="fab fa-twitter fa-2x"></i></i>
         </a>
-        <script>mail2("stefan","gmail",0,"","<i class='far fa-envelope fa-2x'></i>")</script>
+        <script>mail2("philippe.detilloux","gmail",0,"","<i class='far fa-envelope fa-2x'></i>")</script>
        
       </div>
     </div>

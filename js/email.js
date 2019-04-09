@@ -8,7 +8,7 @@
 		// Email.js version 5
 			var tld_ = new Array()
 			tld_[0] = "com";
-			tld_[1] = "org";
+			tld_[1] = "be";
 			tld_[2] = "net";
 			tld_[3] = "ws";
 			tld_[4] = "info";
