@@ -19,3 +19,7 @@
   }
 
 }
+
+.more-link {
+  @include btn($c: var(--black), $bg: var(--green));
+}
