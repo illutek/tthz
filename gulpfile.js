@@ -99,14 +99,7 @@ gulp.task("info:dist", function() {
 gulp.task("style:dist", function() {
   gulp
     .src(path.src.style)
-    .pipe(sourcemaps.init())
-    .pipe(prettyError())
-    .pipe(
-      sass({
-        sourceMap: true,
-        errLogToConsole: true
-      })
-    )
+    .pipe(sass())
     .pipe(
       prefixer({
         browsers: ["last 2 versions"],
@@ -114,7 +107,6 @@ gulp.task("style:dist", function() {
       })
     )
     .pipe(cleancss({ compatibility: "ie9" }))
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.dist.css));
 });
 
