@@ -88,10 +88,7 @@ gulp.task("theme:dist", function() {
 gulp.task("js:dist", function() {
   gulp
     .src(path.src.js)
-    .pipe(prettyError())
-    .pipe(sourcemaps.init())
     .pipe(uglify())
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.dist.js));
 });
 
@@ -102,6 +99,7 @@ gulp.task("info:dist", function() {
 gulp.task("style:dist", function() {
   gulp
     .src(path.src.style)
+    .pipe(sourcemaps.init())
     .pipe(prettyError())
     .pipe(
       sass({
