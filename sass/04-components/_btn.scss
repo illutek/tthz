@@ -18,6 +18,10 @@
     @include btn($c: rgba(var(--black), 1), $bg: var(--green));
   }
 
+  &--white {
+    @include btn($c: rgba(var(--white), 1), $bg: var(--black));
+  }
+
 }
 
 .more-link {

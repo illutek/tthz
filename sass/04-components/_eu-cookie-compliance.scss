@@ -1,0 +1,16 @@
+// /////////////////////////
+// @@ EU-COOKIE
+// ////////////////////////
+
+#sliding-popup {
+  &.sliding-popup-bottom {
+    background: var(--blue);
+    padding: 20px 0 0;
+  }
+}
+
+#sliding-popup {
+  .eu-cookie-compliance-default-button {
+    @include btn($c: rgba(var(--black), 1), $bg: var(--white));
+  }
+}
