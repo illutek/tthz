@@ -1,16 +1,59 @@
 // /////////////////////////
-// @@ NAVIGATION 
+// @@ NAVIGATION
 // ////////////////////////
 
 #toolbar {
   margin-top: 50px;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-  color: var(--green);
-  padding: 15px 10px 0 10px;
+// Bootstrap overrides
+
+.navbar-inverse .navbar-nav {
+  & > li > a {
+    color: var(--green);
+    padding: 15px 10px 0 10px;
+  }
 }
 
-.navbar__item {
-  margin-bottom: 15px;
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: transparent;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0.9rem;
+}
+
+.dropdown-menu {
+  background-color: var(--navbar);
+
+  & > li > a {
+    padding: 0.6rem 2rem;
+    color: var(--green);
+
+    &:hover {
+      background-color: var(--navbar);
+      color: var(--white);
+    }
+  }
+
+  &__no-link {
+    color: var(--white);
+    padding: 0.6rem 1.5rem;
+  }
+
+  .divider {
+    color: var(--white);
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+.navbar-nav {
+  &__item {
+  }
+
+  &__link {
+  }
 }

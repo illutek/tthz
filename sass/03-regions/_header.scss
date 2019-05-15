@@ -11,21 +11,12 @@
   background-position: center center;
   background-size: cover;
   margin-bottom: 30px;
+  height: 40vh;
 }
 
 // preload the first image 
 .backstretch {
   
-}
-
-// header height on frontpage
-.front .bcg_header {
-  height: 40vh;
-}
-
-// header height on other pages
-.not-front .bcg_header {
-  height: 25vh;
 }
 
 .logo {
