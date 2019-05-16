@@ -1,0 +1,36 @@
+// /////////////////////////
+// @@ PARAGRAPHS
+// ////////////////////////
+
+.paragraphs {
+  &__event-info {
+    margin-bottom: 3rem;
+  }
+}
+
+.event-info {
+  &__img-wrap {
+    width: 30%;
+    float: left;
+    margin-right: 2rem;
+  }
+
+  &__body {
+  }
+}
+
+.event-photos {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+
+  & img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+}
