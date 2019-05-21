@@ -3,13 +3,6 @@
 // ////////////////////////
 
 .calendar-node {
-  // background: rgba(var(--black), .5);
-  // padding: 15px;
-  // color: var(--white);
-  // min-height: 200px;
-
-  display: grid;
-  
 
   &__view {
     background: var(--green);
@@ -40,5 +33,13 @@
 
   &__body {
 
+    a {
+      color: var(--green);
+      transition: color .3s;
+
+      &:hover {
+        color: var(--white);
+      }
+    }
   }
 }
