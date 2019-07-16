@@ -42,6 +42,10 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
 
+      <div>
+        <?php print render($page['extern_photos']); ?>
+      </div>      
+
       <?php print render($page['content']); ?>
       
       <?php 

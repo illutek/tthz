@@ -17,4 +17,5 @@ scripts[]   =   js/jquery.backstretch.min.js
 regions[content] = Content
 regions[sidebar_left] = Linker zijbalk
 regions[events] = Events
+regions[extern_photos] = Extern Photos
 regions[sponsors] = Sponsors

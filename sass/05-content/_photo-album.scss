@@ -9,13 +9,30 @@
     color: var(--white);
     background: var(--blue);
     padding: 20px;
-
   }
 
   &__view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
+  }
+
+  &__extern {
+    padding: 15px;
+    border: 1px solid var(--blue);
+    box-shadow: 0 0 15px rgba(var(--black), 0.1);
+    margin-bottom: 20px;
+
+    &-field-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    &-field {
+      align-self: center;
+
+    }
   }
 
   &__teaser {
@@ -58,5 +75,4 @@
       // grid-column: span 2;
     }
   }
-
 }
