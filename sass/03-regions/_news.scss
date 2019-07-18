@@ -1,0 +1,40 @@
+// /////////////////////////
+// @@ NEWS
+// ////////////////////////
+
+.news {
+
+  //on views-view--unformatted--news-frontpage.tpl.php
+  &__view-unformatted {
+    background-color: var(--green);
+    padding: 50px;
+    margin-bottom: 20px;
+    outline: 1px solid black;
+    outline-offset: -20px;
+  }
+
+  //on views-view--news-frontpage.tpl.php
+  &__view-content {
+    position: relative;
+  }
+
+  &__title {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    background-color: var(--green);
+    padding: 0 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__teaser {
+    color: rgba(var(--black), 1);
+    
+  }
+
+  &__btn {
+    color: rgba(var(--black), 1);
+    text-align: right;
+  }
+}
