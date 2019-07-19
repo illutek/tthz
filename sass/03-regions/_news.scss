@@ -36,5 +36,10 @@
   &__btn {
     color: rgba(var(--black), 1);
     text-align: right;
+
+    a {
+      cursor: pointer;
+    }
+    
   }
 }
