@@ -34,3 +34,10 @@
     margin-bottom: 20px;
   }
 }
+
+// on field--field-event-file.tpl.php
+
+.event-file {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
