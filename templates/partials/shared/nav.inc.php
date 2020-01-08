@@ -38,10 +38,10 @@
           </a>
             <ul class="dropdown-menu" role="menu">
               <li class="dropdown-menu__no-link">Toeristen</li>
-              <li><a href="<?php print base_path() ?>evenement/bolderberg-koerse-24082019">Info</a></li>
+              <li><a href="<?php print base_path() ?>evenement/bolderberg-koerse-29082020">Info</a></li>
               <li role="separator" class="divider"></li>
               <li class="dropdown-menu__no-link">Dorpelingen</li>
-              <li><a href="<?php print base_path() ?>evenement/bolderberg-dorpelingen-koerse-24082019">Info</a></li>
+              <li><a href="<?php print base_path() ?>evenement/bolderberg-dorpelingen-koerse-29082020">Info</a></li>
               
             </ul>
         </li>
